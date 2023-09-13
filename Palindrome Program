@@ -1,0 +1,14 @@
+import java.util.Scanner;
+ public class Main {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+    String Originalstr = myObj.nextLine();
+    String reversedStr = "";
+    System.out.println("Originalstring: " + Originalstr);
+    for (int i = 0; i < Originalstr.length(); i++) {
+      reversedStr = Originalstr.charAt(i) + reversedStr;
+    }
+    
+    System.out.println("Reversed string: "+ reversedStr);
+  }
+}
